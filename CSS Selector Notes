@@ -1,0 +1,46 @@
+CSS Selectors :
+
+Types of CSS Selectors:
+1. CSS Simple Selectors: Used for finding the elements based on simple attributes (id and class)
+Types of CSS Simple selectors
+a. CSS element selectors: tagname
+b. CSS id Selector: #   ----------- for ex: #ID_Attribute_value
+c. CSS class Selector: (.)
+d. CSS Universal Selector: *
+
+
+
+2. CSS Pseudo-class selectors: Used for finding the elements based on element locations/positions/indexes
+
+a. Conditions:
+and---------------------------------------- tagName[Attribute='AttributeValue'][Attribute='AttributeValue']
+or----------------------------------------- tagNAme,tagName[Attribute='AttributeValue'],[Attribute='AttributeValue']
+not (to basically exclude the elements)---- tagNAme.tagName:not([Attribute='AttributeValue'])
+
+b. Pseudo Classes (based on the index): Refer: https://www.youtube.com/watch?v=dwB9jkFaiuU&list=PLacgMXFs7kl8E5xl-nu_7ZjHN0O4oiFcl&index=5
+Without using the tagNames:                    Using the tagNames:
+first-child.                                   first-of-type.
+last-child.									   last-of-type.
+nth-child.									   nth-of-tpe.
+
+
+
+3. CSS Combinator selectors: Used defining the relationship between elements in the HTML web page.
+Types of Combinator selector
+a. Descendant selector-------------------- .Attribute<space>Child_Attribute
+b. Child selector------------------------- .Attribute>tagName>Child_Attribute>
+c. Adjacent (very next) sibling selector-- tagName[AtrributeName = 'AttributeValue']+tagName 
+d. General sibling selector--------------- tagName[AtrributeName = 'AttributeValue']~tagName
+
+
+
+4. CSS Attribute selectors: Used for finding the elements based on attributes & attribute values.
+Types of Attribute Selectors:
+a. AttributeName-------------------------  [AttributeName] or tagName[AttributeName]
+b. AttributeValue------------------------  tagName[AttributeName = 'AttributeValue']
+c. AttributeValue-PartialText-WholeWord--  tagName[AttributeName~ = 'AttributeValue'] For ex: input[Placeholder ~= 'Enter']
+d. AttributeValue-PartialText-Text-------  tagName[AttributeName* = 'AttributeValue'] For ex: input[Placeholder* = 'Ent']
+e. AttributeValue-StartsWith-WholeWord---  tagName[AttributeName| = 'Attribute-Value'] For ex: input[Placeholder| = 'id']    word is: 'enter-id'
+f. AttributeValue-StartsWith-Text--------  tagName[AttributeName^ = 'Attribute-Value']
+g. AttributeValue-EndsWith-Text----------  tagName[AttributeName$ = 'Attribute-Value']
+
